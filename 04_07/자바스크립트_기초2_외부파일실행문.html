@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크립트 외부파일 사용하기</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<!-- 홈페이지가 로드시 함수 호출 주로 팝업 창 사용시 많이 사용함.-->
+<body onload="fn1();">
+    
+<!-- 
+    웹문서 하단에 외부파일 호출 실행
+    이유는 모든 웹문서 태그(마크업)와 스타일을 
+    실행 후 자바스크립트 실행하여 사용함. 
+-->
+    <!-- 문서내에서 클릭하여 외부파일 함수 호출 -->
+
+    <ul class="nav">
+        <!-- 함수의 소괄호안에 변수값이나 텍스트, 숫자등을 전달할 값을
+        '전달인자[아규먼트 Agument]'라고한다.
+        그리고 받아주 함수에서는 소괄호안에 변수와 같이 영문으로 사용하는
+        변수를 매개변수라[파라미터 Parameter]고 한다. -->
+        <!-- 인라인 버튼 등록 = 인라인 버튼 이벤트 Event 핸들러 -->
+        <li><a href="#" onclick='urlFn("http://www.tjoeun.com");'>더조은컴퓨터아카데미</a></li>
+        <li><a href="#" onclick="urlFn('http://www.google.com/');">구글</a></li>
+        <li><a href="#" onclick="urlFn('https://www.kurly.com/');">마켓컬리</a></li>
+        <li><a href="#" onclick="urlFn('https://www.starbucksathome.com/');">스타벅스</a></li>
+    </ul>
+
+    <h1 onclick="fn1();">외부 파일 함수 호출</h1>
+
+    <hr>
+    <!-- 젠코딩
+        button*5#btn$>{버튼$}
+     -->
+    <button id="btn1">버튼1</button>
+    <button id="btn2">버튼2</button>
+    <button id="btn3">버튼3</button>
+    <button id="btn4">버튼4</button>
+    <button id="btn5">버튼5</button>
+
+    <hr>
+    <button id="btn6">버튼6</button>
+
+    <hr>
+    <h1 id="output" style="text-align:center;">100</h1>
+
+
+
+    <div id="slide-container">
+        <ul class="slide-wrap">
+            <li class="slide slide1"><img src="./img/photography-img35.jpg" alt=""></li>
+            <li class="slide slide1"><img src="./img/photography-img36.jpg" alt=""></li>
+            <li class="slide slide1"><img src="./img/photography-img37.jpg" alt=""></li>
+            <li class="slide slide1"><img src="./img/photography-img38.jpg" alt=""></li>
+            <li class="slide slide1"><img src="./img/photography-img39.jpg" alt=""></li>
+        </ul>
+    </div>
+
+    <button id="prevBtn">이전슬라이드</button>
+    <button id="nextBtn">다음슬라이드</button>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

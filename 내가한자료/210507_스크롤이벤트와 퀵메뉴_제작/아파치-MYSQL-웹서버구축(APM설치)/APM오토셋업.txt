@@ -1,0 +1,15 @@
+오토셋 다운로드 사이트
+http://autoset.net/xe/download_autoset_10_7_2
+
+
+127.0.0.1/komsco/
+localhost/komsco/
+192.168.0.5/komsco/
+
+아이디 root
+비번 autoset
+
+
+
+
+

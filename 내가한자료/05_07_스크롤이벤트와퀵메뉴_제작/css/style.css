@@ -1,0 +1,28 @@
+@charset "utf-8";
+* {margin:0;padding:0;vertical-align:middle;}
+html,body {width:100%;height:100%;}
+html {overflow-y:scroll;}
+body {font:normal 14px/1 'arial';color:#444;}
+ul,li {list-style:none;}
+h1,h2,h3,h4,h5,h6 {font-size:14px;font-weight:normal;}
+
+/* 메인 섹션 퀵메뉴 스크롤 이벤트 스타일 */
+#wrap {width:100%;}
+#wrap #header {z-index:3;position:fixed;top:0;left:0;width:100%;height:100px;background:rgba(255,255,255, .9);box-shadow:0 3px 7px rgba(0,0,0, .15);line-height:100px;color:rgba(30,100,130, 1);font-size:50px;text-align:center;letter-spacing:2px;}
+#wrap #main   {z-index:2;position:relative;width:100%;}
+#wrap #main  section   {width:100%;height:969px;line-height:969px;color:#fff;font-size:100px;text-align:center;}
+#wrap #main  #section01 {background:#c99;}
+#wrap #main  #section02 {background:#cc9;}
+#wrap #main  #section03 {background:#9cc;}
+#wrap #main  #section04 {background:#99c;}
+#wrap #main  #section05 {background:#9c9;}
+#wrap #main  #section06 {background:#c99;}
+#wrap #main  #section07 {background:#cc9;}
+#wrap #main  #section08 {background:#9cc;}
+#wrap #main  #section09 {background:#99c;}
+#wrap #main  #section10 {background:#c99;}
+
+#wrap #footer {z-index:1;position:relative;width:100%;height:400px;background:#444;}
+
+/* 퀵메뉴는 반드시 엡솔루트로 포지션 지정합니다. */
+#quickMenu {z-index:2;position:absolute;top:0;right:10%;width:80px;height:300px;background:rgba(30,150,180, .9);box-shadow:3px 3px 6px rgba(0,0,0, .15);border:3px solid #fff;box-sizing:border-box;}

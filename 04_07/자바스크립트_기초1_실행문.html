@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기초1 기초문법 실행문</title>
+
+    <script>
+        alert('헤드영역에서 스크립트 경고창 띄우기!!!');        
+    </script>
+
+</head>
+<body>
+    
+    <script>
+
+        // 출력문 : 경고창( 알럿트 )
+        alert('자바스크립트 경고창!!! 교사 문선종');
+        
+        //웹문서에 포함 출력
+        document.write('자바스크립트 웹 문서 창!!! 교사 문선종');
+
+        //개발자 모드
+        //콘솔창에 출력
+        console.log('자바스크립트 콘솔 창!!! 교사 문선종');
+
+        // 함수는 function 뒤에 이름이 오고 괄호를 열고 닫는다.
+        // 그리고 함수 이름 뒤에는 블록(중괄호{})을 사용
+        function hamsoo() {
+           alert('함수 호출 실행 경고창!');
+           console.log('함수 호출 실행 콘솔창!');
+           document.write('함수 호출 실행 웹 문서에 출력!!! ');
+       }
+
+    </script>
+
+    <h2 onclick='hamsoo();'>스크립에서 함수 호출 실행하기</h2>
+    <h1 tabindex="0" onclick="alert('태그요소에서의 클릭이벤트!!!');">자바스크립트</h1>
+
+    <input type="text" onkeydown="hamsoo();" style="width:500px;height:50px;border:1px solid #ccc;">
+    <script>
+
+    </script>
+
+</body>
+</html>

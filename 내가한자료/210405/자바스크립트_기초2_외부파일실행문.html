@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트_기초2_외부파일실행문</title>
+
+
+
+</head>
+<!-- 홈페이지가 로드시 함수 호출 주로 팝업 창 사용시 많이 사용한다. -->
+<body onload="fn1();">
+    
+    <!-- 웹문서 하단에 외부파일 호출 실행 -->
+    <!-- 이유는 모든 웹문서 태그(마크업)와 스타일을 -->
+    <!-- 실행후 자바스크립트 실행하여 사용함.  -->
+    <!-- 문서내에서 클릭하여 함수호출 -->
+    <ul class="nav">
+        <li><a href="#" onclick="urlfn('구글');">구글</a></li>
+        <li><a href="#" onclick="urlfn('마켓컬리');">마켓컬리</a></li>
+        <li><a href="#" onclick="urlfn('스타벅스');">스타벅스</a></li>
+    </ul>
+    <h1 onclick="fn1();">외부 파일 함수 호출</h1>
+
+    <script src="./js/script.js"></script>
+
+
+<script>
+
+   
+</script>
+
+</body>
+</html>
